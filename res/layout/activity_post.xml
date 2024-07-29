@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- EditText for entering post content -->
+        <EditText
+            android:id="@+id/editTextPostContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your diary"
+            android:inputType="textMultiLine"
+            android:minHeight="150dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:gravity="top"/>
+
+        <!-- Button to select images -->
+        <Button
+            android:id="@+id/buttonSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Select Images"/>
+
+        <!-- Container for selected images -->
+        <LinearLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <!-- RecyclerView for displaying images -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- EditText for adding location -->
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add a location"
+            android:layout_marginTop="48dp"/>
+
+        <!-- Button to add location -->
+        <Button
+            android:id="@+id/buttonAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Add Location"/>
+
+        <!-- RecyclerView for displaying locations -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Button to submit the post -->
+        <Button
+            android:id="@+id/buttonSubmitPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
